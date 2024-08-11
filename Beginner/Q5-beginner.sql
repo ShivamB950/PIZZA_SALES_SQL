@@ -5,7 +5,7 @@ SELECT
 FROM
     Pizza_types
         JOIN
-    pizzas ON Pizza_types.pizza_type_id = pizza_types.pizza_type_id
+    pizzas ON Pizza_types.pizza_type_id = pizzas.pizza_type_id
         JOIN
     order_details ON order_details.pizza_id = pizzas.pizza_id
 GROUP BY Pizza_types.name
